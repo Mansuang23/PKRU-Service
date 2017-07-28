@@ -31,6 +31,7 @@
                                 <items>
                                     <navigationItem title="Main Screen" id="AXk-PL-oSz">
                                         <barButtonItem key="rightBarButtonItem" image="ic_group_add.png" id="cxM-GL-pud">
+                                            <color key="tintColor" red="0.98705187182741116" green="0.47044081533827781" blue="0.097728876373638099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <segue destination="4jw-Xy-Zy1" kind="show" id="atA-RC-noT"/>
                                             </connections>
@@ -71,7 +72,9 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="fN1-Vx-N0D"/>
-                                    <barButtonItem image="ic_fingerprint_2x.png" id="c7q-FI-6wb"/>
+                                    <barButtonItem image="ic_fingerprint_2x.png" id="c7q-FI-6wb">
+                                        <color key="tintColor" red="0.98705187182741116" green="0.47044081533827781" blue="0.097728876373638099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4y6-AK-Ke7"/>
                                 </items>
                             </toolbar>
@@ -122,11 +125,13 @@
                                 <items>
                                     <navigationItem title="Sign Up" id="LkO-0O-9ui">
                                         <barButtonItem key="leftBarButtonItem" image="ic_keyboard_arrow_left.png" id="TCx-Ww-Zg9">
+                                            <color key="tintColor" red="0.98705187182741116" green="0.47044081533827781" blue="0.097728876373638099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="LMd-Vb-Hk2"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="ic_save.png" id="Jnl-IU-wGl">
+                                            <color key="tintColor" red="0.98705187182741116" green="0.47044081533827781" blue="0.097728876373638099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="SaveButton:" destination="4jw-Xy-Zy1" id="mSH-ap-nW4"/>
                                             </connections>

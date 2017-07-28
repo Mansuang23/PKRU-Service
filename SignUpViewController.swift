@@ -12,7 +12,8 @@ class SignUpViewController: UIViewController {
     
     // Implicit
     
-    let strBlankAlert = " กรุณากรอกข้อมูลทุกช่อง "
+    let strBlankAlert = "กรุณากรอกข้อมูลทุกช่อง"
+    let strFontPHP = "http://androidthai.in.th/pkru/addDataMansuang.php?isAdd=true&Name="
     
     
     @IBOutlet weak var NameTextField: UITextField!
@@ -50,6 +51,7 @@ class SignUpViewController: UIViewController {
         } else {
             
             // No Space
+            uploadToServer(strName: strName, strUser: strUser, strPassword: strPassword)
         }
         
         
@@ -64,7 +66,16 @@ class SignUpViewController: UIViewController {
         
 
         // Do any additional setup after loading the view.
+        // viewDidLoad
     }
+    
+    func uploadToServer(strName: String, strUser: String, strPassword: String) -> Void {
+        
+        let strPHP: String = strFontPHP + "\(strName)&User=\(strUser)&Password=\(strPassword)"
+        print("strPHP ==> \(strPHP)")
+        
+    }// Upload To Server
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
