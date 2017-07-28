@@ -126,7 +126,11 @@
                                                 <segue destination="BYZ-38-t0r" kind="show" id="LMd-Vb-Hk2"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="Jnl-IU-wGl"/>
+                                        <barButtonItem key="rightBarButtonItem" image="ic_save.png" id="Jnl-IU-wGl">
+                                            <connections>
+                                                <action selector="SaveButton:" destination="4jw-Xy-Zy1" id="mSH-ap-nW4"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -160,6 +164,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ay-7j-lkx">
+                                <rect key="frame" x="16" y="285" width="343" height="21"/>
+                                <color key="backgroundColor" red="0.98705187182741116" green="0.89862027872410499" blue="0.80818162873511845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.98705187182741116" green="0.55030129068214451" blue="0.41233378210727756" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -171,13 +182,23 @@
                             <constraint firstItem="WLB-iu-EXw" firstAttribute="top" secondItem="FUL-yz-wXM" secondAttribute="bottom" id="Sxt-nd-oP8"/>
                             <constraint firstItem="hbV-Mq-KPd" firstAttribute="centerX" secondItem="N7y-vA-cOg" secondAttribute="centerX" id="VZ2-aZ-0ZO"/>
                             <constraint firstItem="fKV-X5-knh" firstAttribute="top" secondItem="hbV-Mq-KPd" secondAttribute="bottom" constant="23" id="XHb-Db-MAP"/>
+                            <constraint firstItem="2Ay-7j-lkx" firstAttribute="leading" secondItem="N7y-vA-cOg" secondAttribute="leadingMargin" id="XLs-PC-CZs"/>
+                            <constraint firstItem="2Ay-7j-lkx" firstAttribute="centerX" secondItem="N7y-vA-cOg" secondAttribute="centerX" id="Ymk-wc-LXP"/>
                             <constraint firstItem="hbV-Mq-KPd" firstAttribute="top" secondItem="6xY-PU-nP9" secondAttribute="bottom" constant="28" id="aj1-7X-Jrj"/>
                             <constraint firstAttribute="trailing" secondItem="FUL-yz-wXM" secondAttribute="trailing" id="hnU-es-GbT"/>
                             <constraint firstItem="84D-6A-VVd" firstAttribute="top" secondItem="WLB-iu-EXw" secondAttribute="bottom" id="kHf-ci-CGB"/>
+                            <constraint firstItem="2Ay-7j-lkx" firstAttribute="top" secondItem="fKV-X5-knh" secondAttribute="bottom" constant="29" id="pSZ-7Z-ezg"/>
                             <constraint firstItem="FUL-yz-wXM" firstAttribute="top" secondItem="7ia-eM-0b4" secondAttribute="bottom" id="qZs-0m-ZR3"/>
                             <constraint firstItem="WLB-iu-EXw" firstAttribute="leading" secondItem="N7y-vA-cOg" secondAttribute="leading" id="qjq-hd-nDo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Ay-7j-lkx" secondAttribute="trailing" id="tM9-FO-G9r"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AlertLabel" destination="2Ay-7j-lkx" id="lOs-m4-ySK"/>
+                        <outlet property="NameTextField" destination="6xY-PU-nP9" id="AAc-LT-P1s"/>
+                        <outlet property="PasswordTextFeild" destination="fKV-X5-knh" id="goW-AL-yJh"/>
+                        <outlet property="UserTextFeild" destination="hbV-Mq-KPd" id="gCH-oY-4oc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WyQ-Xp-nTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,5 +211,6 @@
         <image name="ic_fingerprint_2x.png" width="48" height="48"/>
         <image name="ic_group_add.png" width="24" height="24"/>
         <image name="ic_keyboard_arrow_left.png" width="24" height="24"/>
+        <image name="ic_save.png" width="24" height="24"/>
     </resources>
 </document>
