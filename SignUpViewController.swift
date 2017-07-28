@@ -92,8 +92,16 @@ class SignUpViewController: UIViewController {
                     let strResult = dataString as Any
                     print("strResult ==> \(strResult)")
                     
-                    let myResult = strResult as! String
+                    let myResult: String = strResult as! String
                     print("myResult ==> \(myResult)")
+                    
+                    if myResult == "True"{
+                    
+                    } else {
+                        print("ไม่สามารถอัพโหลดไปยังเซิร์ฟเวอร์ได้")
+                    }
+                    
+
                     
                 }   //if
                 
