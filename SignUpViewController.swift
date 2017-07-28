@@ -96,6 +96,8 @@ class SignUpViewController: UIViewController {
                     print("myResult ==> \(myResult)")
                     
                     if myResult == "True"{
+                        print("Upload OK")
+                        //performSegue(withIdentifier: "BackHome", sender: self)
                     
                     } else {
                         print("ไม่สามารถอัพโหลดไปยังเซิร์ฟเวอร์ได้")
@@ -116,6 +118,19 @@ class SignUpViewController: UIViewController {
         
         
     }   // uploadToServer
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "BackHome" {
+            
+            if let destination = segue.destination as? ViewController {
+                destination.myString = (sender as? String)!
+                
+            } // if 2
+            
+        }   // if 1
+    }
     
 
     override func didReceiveMemoryWarning() {
